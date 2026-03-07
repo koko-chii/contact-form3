@@ -1,0 +1,28 @@
+# Laravel 標準の除外設定
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.env.production
+/composer.lock
+/package-lock.json
+
+# PHPUnit などのキャッシュ
+/.phpunit.cache
+/.phpunit.result.cache
+
+# --- ここから MySQL データ用の設定 ---
+# docker-compose 等で指定している MySQL のデータ保存ディレクトリ
+# (プロジェクト構成に合わせて書き換えてください)
+/docker/mysql/data/
+/mysql/data/
+/data/mysql/
+# ------------------------------------
+
+# OS 固有のファイル
+.DS_Store
+Thumbs.db
