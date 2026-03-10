@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お問い合わせフォーム</title>
+    <title>Contact Form</title>
 
 <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 @yield('styles')
@@ -13,7 +13,9 @@
     <header class="header">
         <div class="header__inner">
             {{-- 見本に合わせて、ここにはタイトルロゴだけを記述します --}}
-            <h1 class="header__logo">Contact Form</h1>
+            <a class="header__logo" href="/">
+                Contact Form
+            </a>
         </div>
     </header>
 

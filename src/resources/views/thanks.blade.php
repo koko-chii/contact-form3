@@ -1,9 +1,12 @@
-@extends('common')
+@extends('layouts.common')
 
-@section('title', '送信完了')
+@section('styles')
+<link rel="stylesheet" href="{{ asset('css/thanks.css') }}">
+@endsection
 
 @section('content')
-    <h2>送信が完了しました</h2>
-    <p>お問い合わせいただきありがとうございました。</p>
-    <a href="{{ route('form.index') }}">TOPへ戻る</a>
+<div class="thanks-content">
+    <h2 class="thanks-message">お問い合わせありがとうございます</h2>
+
+</div>
 @endsection

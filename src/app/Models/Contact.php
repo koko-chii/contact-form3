@@ -9,11 +9,6 @@ class Contact extends Model
 {
     use HasFactory;
 
-    public function index()
-    {
 
-    $contacts = Contact::all();
-
-    return view('index', compact('contacts'));
-    }
+    protected $fillable = ['name', 'email', 'tel', 'content'];
 }

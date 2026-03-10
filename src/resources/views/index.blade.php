@@ -4,8 +4,6 @@
 <link rel="stylesheet" href="{{ asset('css/index.css') }}">
 @endsection
 
-@section('title', 'Contact Form')
-
 @section('content')
 <div class="contact-form">
 
@@ -21,9 +19,11 @@
             <div class="form__input">
                 <input type="text" name="name" value="{{ old('name') }}"
                 placeholder="テスト太郎">
+            <div class="form__error">
                 @error('name')
-                    <p class="error">② {{ $message }}</p>
+                {{ $message }}
                 @enderror
+            </div>
             </div>
         </div>
 
@@ -34,8 +34,10 @@
             <div class="form__input">
                 <input type="email" name="email" value="{{ old('email') }}"
                 placeholder="test@example.com">
+            </div>
+            <div class="form__error">
                 @error('email')
-                    <p class="error">④ {{ $message }}</p>
+                {{ $message }}
                 @enderror
             </div>
         </div>
@@ -47,8 +49,10 @@
             <div class="form__input">
                 <input type="tel" name="tel" value="{{ old('tel') }}"
                 placeholder="09012345678">
+            </div>
+            <div class="form__error">
                 @error('tel')
-                    <p class="error">⑥ {{ $message }}</p>
+                {{ $message }}
                 @enderror
             </div>
         </div>

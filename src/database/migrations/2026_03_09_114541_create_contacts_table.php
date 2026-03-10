@@ -13,8 +13,8 @@ class CreateContactsTable extends Migration
             $table->id();
             $table->string('name');    // 名前
             $table->string('email');   // メールアドレス
-            $table->string('tel');
-            $table->text('content');   // お問合せ内容
+            $table->string('tel' , 11);
+            $table->text('content')->nullable();   // お問合せ内容
             $table->timestamps();
         });
     }

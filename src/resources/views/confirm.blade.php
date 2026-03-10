@@ -1,11 +1,9 @@
-{{-- confirm.blade.php --}}
+
 @extends('layouts.common')
 
 @section('styles')
 <link rel="stylesheet" href="{{ asset('css/confirm.css') }}">
 @endsection
-
-@section('title', 'Confirm')
 
 @section('content')
 <div class="confirm-form">
@@ -26,7 +24,7 @@
                 <tr class="confirm-table__row">
                     <th class="confirm-table__header">メールアドレス</th>
                     <td class="confirm-table__text">
-                        <input type="text" name="email " value="{{ $contact['email'] }}" readonly />
+                        <input type="text" name="email" value="{{ $contact['email'] }}" readonly />
                         <input type="hidden" name="email" value="{{ $contact['email'] }}" />
                     </td>
                 </tr>
@@ -52,7 +50,6 @@
 
         <div class="form__button">
             <button class="form__button-submit" type="submit">送信</button>
-            <a class="form__button-back" href="/">修正する</a>
         </div>
     </form>
 </div>

@@ -3,34 +3,31 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
-use Illuminate\Http\Request;
-
+use App\Http\Requests\ContactRequest;
 
 class ContactController extends Controller
 {
 
     public function index()
     {
-        $contacts = Contact::all();
-
-        return view('index', ['contacts' => $contacts]);
+        $contacts = Contact::all(); 
+        return view('index');
     }
 
-    public function confirm(Request $request)
-{
-    // フォームの入力値を取得
-    $contact = $request->only(['name', 'email', 'tel', 'content']);
+    public function confirm(ContactRequest $request)
+    {
+        $contact = $request->only(['name', 'email', 'tel', 'content']);
 
-    // 確認画面（confirm.blade.php）を表示
-    return view('confirm', compact('contact'));
-}
+        return view('confirm', compact('contact'));
+    }
 
-public function store(Request $request)
-{
-    // ここでデータベース保存などの処理を行います（今回は一旦表示のみ）
-    // $contact = $request->all();
+    public function store(ContactRequest $request)
+    {
+        $contact = $request->only(['name', 'email', 'tel', 'content']);
 
-    // サンクスページ（thanks.blade.php）を表示
+        // データベースに保存
+        Contact::create($contact);
+
     return view('thanks');
 }
 

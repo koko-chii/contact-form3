@@ -1,33 +1,76 @@
 /* confirm.css */
+
+/* 1. タイトルの中央寄せ（index.cssと同じ） */
+.confirm-title {
+    text-align: center;
+    font-size: 24px;
+    margin: 60px 0 40px;
+    font-weight: bold;
+}
+
+/* 2. 確認エリア全体を中央に寄せる */
 .confirm-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.confirm-table th, 
-.confirm-table td {
-    padding: 15px;
-    border-bottom: 1px solid #eee;
-    text-align: left;
+.confirm-table__inner {
+    width: 600px; /* 見本に合わせて幅を固定 */
+    margin: 0 auto;
+    border-collapse: collapse; /* 枠線を1本にまとめる */
+    border: 1px solid #ddd;   /* 全体を薄いグレーで囲む */
 }
 
-.confirm-table th {
+.confirm-table__row {
+    border-bottom: 1px solid #ddd; /* 行ごとの区切り線 */
+}
+
+/* 3. ラベル（左側）の設定 */
+.confirm-table__header {
     width: 30%;
-    background-color: #fcfcfc;
+    background-color: #f4f4f4; /* 薄いグレーの背景 */
+    padding: 20px;
+    text-align: left;
+    font-weight: bold;
+    border-right: 1px solid #ddd; /* 右側の区切り線 */
 }
 
-.btn-back {
-    background-color: #6c757d;
-    color: white;
-    margin-right: 10px;
+/* 4. 入力内容（右側）の設定 */
+.confirm-table__text {
+    width: 70%;
+    padding: 10px 20px;
 }
 
-.btn-send {
-    background-color: #28a745;
-    color: white;
+/* 確認画面の入力欄を「ただの文字」に見せる設定 */
+.confirm-table__text input {
+    width: 100%;
+    border: none;       /* 枠線を消す */
+    background:transparent;
+    font-size: 16px;
+    outline: none;      /* クリックしても青枠が出ないようにする */
+    color: #333;
 }
 
-.btn-send:hover {
-    background-color: #218838;
+/* 5. ボタンエリア */
+.form__button {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column; /* ボタンとリンクを縦に並べる */
+    align-items: center;
+    gap: 15px;
 }
+
+/* 送信ボタン（黒色） */
+.form__button-submit {
+    width: 250px;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
