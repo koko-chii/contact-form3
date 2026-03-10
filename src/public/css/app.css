@@ -1,0 +1,40 @@
+/* app.css */
+
+
+/* ヘッダーのスタイル */
+.header {
+    background-color: #000; /* 黒背景 */
+    color: #fff;            /* 白文字 */
+    padding: 20px 0;
+    text-align: left;
+    padding-left: 50px;
+
+.header__logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* フォームのレイアウト */
+.form-group {
+    margin-bottom: 60px;
+}
+
+/* エラーメッセージ（見本の②④⑥） */
+.error {
+    color: #ff0000; /* 赤文字 */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* 送信ボタン（見本の⑧） */
+button[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    margin: 0 auto; /* 中央寄せ */
+}

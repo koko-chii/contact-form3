@@ -1,0 +1,53 @@
+/* index.css */
+
+.contact-title {
+    text-align: center;      /* 中央寄せ */
+    font-size: 24px;         /* 文字の大きさ */
+    margin: 60px 0 40px;     /* 上に60px、下に40pxの余白 */
+    font-weight: bold;
+}
+
+/* 1. フォームの基本レイアウト（横並び設定） */
+.form-group {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.form__label {
+    width: 20%;
+    padding-top: 10px;
+}
+
+.form__input {
+    width: 40%;
+}
+
+.form__input input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.form__input textarea {
+    width: 100%;
+    padding: 10px;
+    height: 180px;
+    box-sizing: border-box; /* 枠線がはみ出さないように追加 */
+    border: 1px solid #ccc;
+}
+
+/* 2. ボタンエリアの調整（index固有の設定） */
+.form__button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form__button button {
+    width: 200px;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+}

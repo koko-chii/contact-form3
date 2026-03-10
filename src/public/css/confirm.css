@@ -1,0 +1,33 @@
+/* confirm.css */
+.confirm-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.confirm-table th, 
+.confirm-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.confirm-table th {
+    width: 30%;
+    background-color: #fcfcfc;
+}
+
+.btn-back {
+    background-color: #6c757d;
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-send {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-send:hover {
+    background-color: #218838;
+}

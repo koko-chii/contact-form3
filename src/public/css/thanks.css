@@ -1,0 +1,23 @@
+/* thanks.css */
+.thanks-message {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.thanks-message p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.btn-home {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+}
+
+.btn-home:hover {
+    background-color: #555;
+}
