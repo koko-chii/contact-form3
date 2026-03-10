@@ -20,6 +20,13 @@
     padding-top: 10px;
 }
 
+.form__label--required {
+    color: #ccc;          /* 薄いグレー */
+    font-size: 24;      /* 少し小さく */
+    margin-left: 10px;    /* 項目名との間隔 */
+    font-weight: normal;  /* 文字を細く */
+}
+
 .form__input {
     width: 40%;
 }
@@ -50,4 +57,10 @@
     background-color: black;
     color: white;
     padding: 10px 0;
+}
+
+/* 入力ヒント（placeholder）の色を薄くする */
+::placeholder {
+    color: #ccc;      /* 薄いグレー */
+    opacity: 1;       /* Firefox対策 */
 }

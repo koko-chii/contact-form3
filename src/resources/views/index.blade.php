@@ -16,10 +16,11 @@
 
         <div class="form-group">
             <div class="form__label">
-                <label>お名前</label>
+                <label>お名前<span class="form__label--required">必須</span></label>
             </div>
             <div class="form__input">
-                <input type="text" name="name" value="{{ old('name') }}">
+                <input type="text" name="name" value="{{ old('name') }}"
+                placeholder="テスト太郎">
                 @error('name')
                     <p class="error">② {{ $message }}</p>
                 @enderror
@@ -28,10 +29,11 @@
 
         <div class="form-group">
             <div class="form__label">
-                <label>メールアドレス</label>
+                <label>メールアドレス<span class="form__label--required">必須</span></label>
             </div>
             <div class="form__input">
-                <input type="email" name="email" value="{{ old('email') }}">
+                <input type="email" name="email" value="{{ old('email') }}"
+                placeholder="test@example.com">
                 @error('email')
                     <p class="error">④ {{ $message }}</p>
                 @enderror
@@ -40,10 +42,11 @@
 
         <div class="form-group">
             <div class="form__label">
-                <label>電話番号</label>
+                <label>電話番号<span class="form__label--required">必須</span></label>
             </div>
             <div class="form__input">
-                <input type="tel" name="tel" value="{{ old('tel') }}">
+                <input type="tel" name="tel" value="{{ old('tel') }}"
+                placeholder="09012345678">
                 @error('tel')
                     <p class="error">⑥ {{ $message }}</p>
                 @enderror
@@ -55,7 +58,7 @@
                 <label>お問合せ内容</label>
             </div>
             <div class="form__input">
-                <textarea name="content">{{ old('content') }}</textarea>
+                <textarea name="content" placeholder="資料をいただきたいです">{{ old('content') }}</textarea>
             </div>
         </div>
 
