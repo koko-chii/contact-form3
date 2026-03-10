@@ -8,3 +8,5 @@ use App\Http\Controllers\ContactController;
 Route::get('/', [ContactController::class, 'index']);
 Route::post('/confirm', [ContactController::class, 'confirm'])
 ->name('form.confirm');
+Route::post('/thanks', [ContactController::class, 'store'])
+->name('form.store');
