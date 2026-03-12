@@ -16,8 +16,11 @@ class ContactRequest extends FormRequest
     public function rules()
     {
         return [
-            //
-        ];
+                'name' => ['required', 'string', 'max:255'],
+                'email' => ['required', 'string', 'email', 'max:255'],
+                'tel' => ['required', 'numeric', 'digits_between:10,11'],
+                'content' => [], // お問い合わせ内容（指定なし）
+                ];
     }
 
     public function messages()

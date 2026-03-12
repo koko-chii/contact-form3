@@ -22,7 +22,7 @@
 }
 
 /* エラーメッセージ（見本の②④⑥） */
-.error {
+.form__error {
     color: #ff0000; /* 赤文字 */
     font-size: 14px;
     margin-top: 5px;

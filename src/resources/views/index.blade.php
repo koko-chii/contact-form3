@@ -19,6 +19,7 @@
             <div class="form__input">
                 <input type="text" name="name" value="{{ old('name') }}"
                 placeholder="テスト太郎">
+
             <div class="form__error">
                 @error('name')
                 {{ $message }}
@@ -34,11 +35,12 @@
             <div class="form__input">
                 <input type="email" name="email" value="{{ old('email') }}"
                 placeholder="test@example.com">
-            </div>
+
             <div class="form__error">
                 @error('email')
                 {{ $message }}
                 @enderror
+            </div>
             </div>
         </div>
 
@@ -49,11 +51,12 @@
             <div class="form__input">
                 <input type="tel" name="tel" value="{{ old('tel') }}"
                 placeholder="09012345678">
-            </div>
+
             <div class="form__error">
                 @error('tel')
                 {{ $message }}
                 @enderror
+            </div>
             </div>
         </div>
 
